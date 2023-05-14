@@ -1,0 +1,383 @@
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: sans-serif;}
+
+.main{
+    background-color: rgb(158, 231, 231);
+    /* display: flex; */
+    justify-content: center;
+    min-height: 100vh;
+}
+.nav1{
+    width: 100%;
+    height: 4rem;
+    background: rgb(158, 231, 231);
+    color: rgb(1, 14, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(1, 14, 54);
+    padding: 2rem 2rem;
+}
+.second
+{
+    border-color: rgb(1, 14, 54);
+    border-width:  .1em;
+    border-style: dotted; 
+    /* border-radius: 10% 10%; */
+}
+.second a
+{
+  font-size: 1rem;
+    text-decoration: none;
+    color: rgb(1, 14, 54);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.intro
+{
+    text-align: center;
+    padding-top: 10rem;
+    color: rgb(1, 14, 54);
+    position: relative;
+    
+}
+.intro h1{
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 2rem;
+}
+.intro p
+{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Instrument Serif', serif;
+    max-width: 70rem;
+    padding-left: 20rem;
+}
+.container
+{
+    width: 100%;
+    height: 10rem;
+    color: rgb(158, 231, 231);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 13rem;
+
+}
+
+.circle {
+    background-color:rgb(158, 231, 231);
+    height: 6rem;
+    width: 6rem;
+    display: block;
+    border: 0.4rem solid rgb(1, 14, 54);
+    border-radius: 10rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation-name:circle;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+  }
+  @keyframes circle	{
+    0%   {height:120px;}
+    10% {height: 120px;}
+    50% {height: 130px;}
+    75% {height: 150px;}
+    90% {height: 130px;}
+    100% {height: 120px;}
+  }
+  .arrow {
+    font-size: 10rem;
+    color: rgb(1, 14, 54);
+    bottom: 27px;
+    position: absolute;
+    left: 60%;
+    margin-left: -1.2rem;
+    animation-name:arrow;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+  }
+  @keyframes arrow {
+    0%   {bottom:0;}
+    75% {bottom:90px;}
+    100% {bottom:0;}
+  }
+
+.sub
+{
+    /* padding-top: 200px; */
+    font-size: large;
+    font-family: 'Instrument Serif', serif;
+    padding-left: 11.5rem;
+    letter-spacing: 10px;
+    color: rgb(77, 87, 98);
+    padding-bottom: 1.5rem;
+}
+.sub-text
+{
+    font-size: 2rem;
+    font-family: 'Instrument Serif', serif;
+    padding-left: 11.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(1, 14, 54);
+    padding-bottom: 1rem;
+
+}
+.column {
+    float: left;
+    width: 50%;
+    padding-top: 11.5rem;
+    /* background-color: white; */
+    /* padding-left: 180px; */
+    /* height: 300px; Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.column p 
+{
+    padding-top: 1rem;
+    padding-left: 11.5rem;
+    
+}
+
+.column img {
+    /* padding-top: 400px; */
+    height: 18rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+}
+
+/* column2 */
+.sub2
+{
+    /* padding-top: 200px; */
+    font-size: large;
+    font-family: 'Instrument Serif', serif;
+    padding-left: 6rem;
+    letter-spacing: 10px;
+    color: rgb(77, 87, 98);
+    padding-bottom: 1.5rem;
+}
+.sub-text2
+{
+    font-size: 2em;
+    font-family: 'Instrument Serif', serif;
+    padding-left: 6rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(1, 14, 54);
+    padding-bottom: 1rem;
+
+}
+.column2 {
+    float: left;
+    width: 50%;
+    padding-top: 100px;
+    /* background-color: azure; */
+    padding-bottom: 100px;
+    height: 450px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+    }
+  }
+
+.column2 p 
+{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.column2 img {
+    height: 18rem;
+    padding-left: 11.5rem;
+    padding-right: 6rem;
+
+}
+
+/* section3 */
+.section3
+{
+    padding-bottom: 70px;
+}
+.sub3
+{
+
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* padding-left: 100px; */
+    letter-spacing: 10px;
+    color: rgb(77, 87, 98);
+    padding-bottom: 70px;
+    padding-top: 100px;
+
+}
+.logo
+{
+    max-height: 150px;
+    padding-left: 70px;
+}
+
+/* section4 */
+
+.column3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 800px; /* Should be removed. Only for demonstration */
+    padding-right: 100px;
+  }
+  
+  /* Clear floats after the columns */
+  .row3:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column3 {
+      width: 100%;
+    }
+  }
+
+.sub-text3
+{
+    font-size: 1.7em;
+    font-family: 'Instrument Serif', serif;
+    padding-left: 200px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(1, 14, 54);
+    padding-bottom: 30px;
+}  
+.sub4
+{
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    /* padding-left: 100px; */
+    letter-spacing: -1px;
+    color: rgb(77, 87, 98);
+    padding-left: 200px;
+    padding-right: 100px;
+    padding-bottom: 70px;
+    /* padding-top: 100px; */
+}
+.form
+{
+  padding-left: 200px;
+}
+.form-element
+{
+  /* border-radius: 15px 50px 30px; */
+  font-size: large;
+  border-radius: 10px;
+  min-height: 60px;
+  min-width: 400px;
+}
+
+.icon-text
+{
+  padding-left: 50px;
+  padding-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(1, 14, 54);
+  padding-bottom: 50px;
+}
+.icon-text p
+{
+  font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    padding-top: 10px;
+    /* padding-left: 100px; */
+    /* letter-spacing: -1px; */
+    color: rgb(77, 87, 98);
+    width: 300px;
+}
+@media screen and (max-width: 600px)
+{
+  .intro
+  {
+    padding-top: 50px;
+  }
+  .intro h1
+  {
+    /* padding-top: 50px; */
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1rem;
+    /* padding-right: 75px; */
+
+  }
+  .intro p 
+  {
+    font-size: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+    
+  }
+  .second a
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: small;
+
+  }
+  .sub
+  {
+    font-size: 1rem;
+    font-family: 'Instrument Serif', serif;
+    padding-left: 2rem;
+    letter-spacing: 10px;
+    color: rgb(77, 87, 98);
+    padding-bottom: 1.5rem;
+
+  }
+  .sub-text
+  {
+    font-size: 2rem;
+    font-family: 'Instrument Serif', serif;
+    padding-left: 2rem;
+  }
+
+  
+}
